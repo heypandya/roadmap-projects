@@ -1,1 +1,1 @@
-Project: [Single-page CV](https://github.com/heypandya/roadmap-projects/tree/main/Frondend/01-single-page-cv)
+https://github.com/heypandya/roadmap-projects/tree/main/Frondend/01-single-page-cv
