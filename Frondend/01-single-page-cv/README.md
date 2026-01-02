@@ -1,2 +1,1 @@
-https://github.com/heypandya/roadmap-projects/tree/main/Frondend/01-single-page-cv
 https://roadmap.sh/projects/single-page-cv
