@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Website</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 900px;
+        font-family: "PT sans", sans-serif;
+      }
+      .image {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+      }
+      .logo-name {
+        font-size: 25px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .nav-left {
+        display: flex;
+        align-items: center;
+      }
+      .nav-right ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        font-size: 25px;
+      }
+      .nav-right a {
+        text-decoration: none;
+      }
+      .hero {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-text {
+        font-size: 56px;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        color: gray;
+        margin-top: 0px;
+      }
+
+      .middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: start;
+        justify-items: stretch;
+        padding: 10px;
+        margin: 0 auto;
+      }
+      #projects ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      #education li::marker {
+        content: "→ ";
+      }
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 21px;
+      }
+
+      .box {
+        padding: 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+
+      .box .origin {
+        color: #aaa;
+        margin-bottom: 0;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-left">
+        <img class="image" src="logo.png" alt="logo" />
+        <p class="logo-name">Sundarapandiyan</p>
+      </div>
+      <nav class="nav-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero-text">FrontEnd Developer</h1>
+        <p class="description">HTML only with proper layout, no styling</p>
+      </section>
+
+      <section class="middle">
+        <section class="card" id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>HTML only Portfolio</li>
+            <li>Calculator</li>
+            <li>Quiz App</li>
+            <li>Countdown Timer</li>
+            <li>Product Upcoming Page</li>
+          </ul>
+        </section>
+
+        <section class="card" id="work-experience">
+          <h2>Work Experience</h2>
+          <h3>roadmap.sh</h3>
+          <p>Solved all the frontend projects</p>
+          <a href="https://github.com/heypandya">Visit my profile</a>
+
+          <div class="open-source work">
+            <h3>Open Source Work</h3>
+            <p>
+              Contributed to 50 open source projects. Made my own projects with
+              200 Github Stars.
+            </p>
+            <a href="http://github.com/heypandya">Visit my Github Profile</a>
+          </div>
+        </section>
+
+        <section class="card" id="education">
+          <h2>Education</h2>
+          <p>Graduated with 3.76 out of 4 CGPA. Won ACME Hackathon</p>
+
+          <p>Course I took:</p>
+          <ul>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discreet Mathematics</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="testimonials">
+        <h2>Reviews from my Teachers</h2>
+        <div class="testimonials-grid">
+          <div class="box">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments
+            </p>
+            <p class="origin">Jane Doe</p>
+            <p class="origin">Assistant Professor</p>
+          </div>
+          <div class="box">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments
+            </p>
+            <p class="origin">Jane Doe</p>
+            <p class="origin">Assistant Professor</p>
+          </div>
+          <div class="box">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments
+            </p>
+            <p class="origin">Jane Doe</p>
+            <p class="origin">Assistant Professor</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>©️ all rights reserved 2025</p>
+      </footer>
+    </main>
+  </body>
+</html>
